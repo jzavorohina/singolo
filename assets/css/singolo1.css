@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	background-color: #fff;
+	color: #555;
+}
+
+.wrapper {
+	width: 1020px;
+	background-color: red;
+}
+
+p {
+	padding: 0 0 20px 0;
+	line-height: 1.7em;
+}
+
+h1,h2 {
+    font-family: 'Lato', sans-serif;
+    font: normal 170% ;
+	margin:0 0 15px 0;
+	padding: 15px 0 5px 0;
+    color: #666d89;
+    text-decoration: solid;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+a, a:hover {
+	outline: none;
+	text-decoration:  underline;
+	color: #f06c64;
+}
+
+ul {
+	margin: 2px 0 22px 17px;
+}
+
+ul li {
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 5px;
+	line-height: 1.5em;
+}
+
+.header {
+	background-color: #2d303a;
+	height: 177px;
+	font-size: 0.8em;
+	margin-left: 0px;
+	margin-right: 0px;
+	min-width: 1020px;
+}
+
+.main, .logo, .menubar, .site_content, .footer {
+	margin-left: auto;
+    margin-right: auto;  
+}
+
+.main {
+    width: 1020px;
+}
+
+.logo {
+	width: 880px;
+	padding-bottom: 40px;
+}
+
+.logo h1, .logo h2 {
+    font-family: 'Lato', sans-serif;
+	font: normal 300%;
+	margin: 0 0 0 9px;
+}
+
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+    font-family: 'Lato', sans-serif;
+	padding: 22px 0 0 0;
+	color: #fff;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+.logo_text h2{
+    font-family: 'Lato', sans-serif;
+	font-size: 0.9em;
+	padding: 4px 0 0 0;
+	color: #999;
+}
+
+.menubar {
+	width: 900px;
+	height: 46px;
+}
+
+ul.menu {
+	/*прижать элемент к правому краю*/
+	float: right;
+	/* height: min-content; */
+	height: max-content;
+	/* width: 700px; */
+}
+
+ul.menu li {
+	float: left;
+	padding: 0 0 0 9px;
+	/*убрать элементы маркированного списка*/
+ 	list-style: none;
+	margin: 1px 2px 0 0; 
+	color:grey;
+	font-size: 12px;
+	margin-left: 30px;
+}
+
+/* ul.menu li:not(:first-child)::before {
+	bottom: 3px;
+	left:-13px; 
+	list-style: none;
+	color:red;
+	font-size: 19px;
+	font-weight: 400;
+	content:".";
+	position: relative;
+	font-family: Lato, sans-serif;} */
+
+ul.menu li a {
+    font-family: 'Lato', sans-serif;
+    font: normal 100%;
+	/*превратить не блочный элемент в блочный*/
+	display: block;
+	/* height: 20px; */
+	/* padding: 6px 35px 5px 28px; */
+	color:#fff;
+	text-decoration: none;
+}
+
+ul.menu li.selected a {
+	color:#f06c64;
+}
+
+ul.menu li a:hover {
+	color: #f06c64;
+}
+
+.site_content {
+    width: 1020px;
+	/*скрыть контент который выходит за рамки заданного размера*/
+	overflow: hidden;
+	/* margin 20px auto 0 auto; */
+	background-color: #f06c64;
+}
+
+.slider_block{
+	background-color: #f06c64;
+	width: 1020px;
+	height: 400px;
+}
+
+.services_block{
+	background-color: white;
+	width: 1020px;
+}
+
+.content {
+	text-align: left;
+	width: 1020px;
+	padding: 0;
+	float: left;
+}
+
+.content a{
+text-decoration: none;
+}
+
+/* .footer{
+    width: 1020px;
+	height: 100px;
+	padding: 28px 0 5px 0;
+	text-align: center;
+	background-color: #2d303a;
+	color: #a8aa94;
+    min-width: 1020px;
+}
+
+.footer p {
+	padding: 0 0 10px 0;
+} */
