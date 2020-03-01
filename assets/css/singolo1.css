@@ -1,160 +1,99 @@
-* {
+/*=================================
+Webfonts Lato
+===================================*/
+  /* latin-ext */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin-ext */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin-ext */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin-ext */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwaPGR_p.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/*=================================
+Main styles
+===================================*/
+body, *, *:before, *:after {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 html, body {
-    font-family: Lato, sans-serif;
-	font-size: 16px;
-	background-color: #ffffff;
-	color: #555;
-}
-/*=================================
-HEADER
-===================================*/
-.header {
-	min-width: 1020px;
-	height: 89px;  /*PP*/
-	font-size: 16px;
-	margin-left: 0px;
-	margin-right: 0px;
-	background-color: #2d303a; /*PixelPerfect*/
-	box-shadow: 0 6px 0 #323746; /*PP*/ /*полоса другого цвета внизу блока*/
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;    /* root size */
+	color: #767e9e;  /* основной цвет для шрифта */
+	background-color:#ffffff;
 }
 
-.main, .logo, .menubar, .site_content, .footer {
-	margin-left: auto;
-    margin-right: auto;  
-}
-
-.main {
-	width: 1020px;
-	margin-bottom: 6px; /*PP*/
-}
-
-/* LOGO */
-.logo {
-	width: auto;
-	float: left;
-	padding-left: 40px; /*PP*/
-}
-
-.logo h1, .logo h2 {
+h1,h2,h3,h4,h5,h6, .title {
     font-family: 'Lato', sans-serif;
-	font: normal 300%;
-	/* margin: 0 0 0 9px; */
-	
-}
-
-.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
-    font-family: 'Lato', sans-serif;
-	padding: 22px 0 0 0;
-	color: #ffffff;
-	letter-spacing: 0.1em;
-	text-decoration: none;
-}
-
-.logo_text h2{
-    font-family: 'Lato', sans-serif;
-	font-size: 0.9em;
-	padding: 4px 0 0 0;
-	color: #999;
-}
-
-.logo_text span{
-	color:red;
-}
-
-/* MENU */
-.menubar {
-	width: 500px;
-	height: 89px;
-	margin-right: 0;
-	padding-top: 39px;
-	background-color: #2d303a; 
-}
-
-.menu {
-	width: 500px;
-	height: 40px;
-	margin:0;
-	padding: 0 0 0 80px;
-	background-color: #2d303a;  
-}
-
-ul.menu {
-	float: right; /*прижать элемент к правому краю*/
-}
-
-ul.menu li {
-	float: left;
-	position: relative;
-	list-style: none; /*убрать элементы маркированного списка */
-	font-family: "Lato-Bold", Lato, sans-serif;
-	font-size: 12px;
-	font-weight: 400;
-	color:#494e62;
-}
-
-/*стиль точек маркированного списка в меню*/
- /* ul.menu li:first-child {
-	list-style: none; /*убрать первый элемент маркированного списка */
-	/*float: left;
-	position: relative;
-	/* padding: 0 13px 0 27px; */
-	/* list-style: none; убрать элементы маркированного списка */
-	/* font-family: "Lato-Bold", Lato, sans-serif;
-	font-size: 12px;
-	font-weight: 400;
-	color:#494e62; */
-/* }  */
-
-/*стиль уникальных точек в меню*/
-/* ul.menu li:not(:first-child)::before {
-	list-style: none; /*убрать первый элемент маркированного списка */
-	/* position: relative;
-	font-family: "Lato-Bold", Lato, sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	content:".";
-	color: #494e62;} */
-
-/* ul.menu li:not(:first-child)::after {
-	list-style: none; /*убрать первый элемент маркированного списка */
-	/* position: relative;  */
-	/* font-family: "Lato-Bold", Lato, sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	content:".";
-	color: #494e62;
-} */ 
-
-ul.menu li a {
-	display: block; /*превратить не блочный элемент в блочный*/
-	padding: 0 10px 0 10px;
-    font-family: "Lato-Bold", Lato, sans-serif;
-    font-size: 100%;
-	text-decoration: none;
-	color:#ffffff; /*PP*/
-}
-
-ul.menu li.selected a {
-	padding: 0 10px 0 10px;
-	color:#f06c64;
-}
-
-ul.menu li a:hover {
-	padding: 0 10px 0 10px;
-	color: #f06c64;
-}
-
-/*===================================
-BODY
-=====================================*/
-.wrapper {
-	width: 1020px;
-	background-color: red;
+    font-weight: bold;
+    /* margin: 0 0 1em; */
 }
 
 h1,h2 {
@@ -167,75 +106,141 @@ h1,h2 {
 }
 
 h2 {
-	font-size: 140%;
+	font-size: 1.4rem;
+	
 }
+
+h3 {
+    font-size: 1.2rem;
+}
+
+a {
+    font-weight: bold;
+	text-decoration: none;
+	outline: none;
+	color: #ffffff;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+	color: #f06c64;
+	outline: none;
+} 
 
 p {
-	padding: 0 0 20px 0;
-	line-height: 1.7em;
+    margin: 0.5em 0;
+	line-height: 1.3;
+	/* padding: 0 0 20px 0;
+	line-height: 1.7em; */
 }
 
-ul {
-	margin: 2px 0 22px 17px;
+/* для вырвнивания только контента и сохранения оформления хэдера с тенью во всю ширину */
+.fixed-width {
+	width: 940px;
+	margin: 0 auto 0 auto;  /* выравнивание по центру через auto отступ */
+	/* border: 1px solid green;  */
 }
 
-ul li {
-	margin: 0 0 6px 0;
-	padding: 0 0 4px 5px;
-	line-height: 16px;
+/* .wrapper {
+	width: 940px;
+	background-color: red;
+} */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
 }
 
-.site_content {
-    width: 1020px;
-	overflow: hidden; /*скрыть контент который выходит за рамки заданного размера*/
-	/* margin 20px auto 0 auto; */
-	background-color: #f06c64;
+.clearfix:after {
+    clear: both;
 }
 
-a, a:hover {
-	outline: none;
-	text-decoration:  underline;
-	color: #f06c64;
-}
-
-/* BLOCKS */
-.slider_block{
-	background-color: #f06c64; /*PP*/
-	width: 1020px;
-	height: 594px; /*PP*/
+/*=================================
+Header
+===================================*/
+.page-header {
+	border-top: 5px solid #ebebeb;
+    padding-bottom: 2em;
+    border: 1px solid red;
+	min-width: 940px;
+	height: 89px;  /*PP*/
+	font-size: 16px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #2d303a; /*PixelPerfect*/
+	box-shadow: 0 6px 0 #323746; /*PP полоса другого цвета внизу блока*/
+	/* border-bottom: 6px solid #323746; */
+	/* width: 940px; */  /* обрезать фон далее контента */
 	margin-bottom: 6px; /*PP*/
-	box-shadow: 0 6px 0 #ea676b; /*PP*/ /*полоса другого цвета внизу блока*/
 }
 
-.services_block{
-	background-color:#ffffff;
-	width: 1020px;
+	.page-header > div {
+		height: 89px;  /*PP*/
+		border: 1px solid yellow;
+		width: 940px;  /* div на фикс.ширину */
+		position: relative;
+	}
+
+.page-header, .page-header .logo, .page-header .menubar, .page-header .site_content, .page-header .footer {
+	margin-left: auto;
+	margin-right: auto;  
 }
 
-/* .content {
-	text-align: left;
-	width: 1020px;
-	padding: 0;
+/* Logo */
+.page-header .logo {
+	font-family: 'Lato', sans-serif;
+	font-size: bold 35px;
+	width: auto;
 	float: left;
+	padding-left: 40px; /*PP*/
+	border: 1px solid red;
+	position: absolute;
+    bottom: 0;
 }
 
-.content a{
-text-decoration: none;
-} */
-
-/*===================================
-FOOTER
-=====================================*/
-/* .footer{
-    width: 1020px;
-	height: 100px;
-	padding: 28px 0 5px 0;
-	text-align: center;
-	background-color: #2d303a;
-	color: #a8aa94;
-    min-width: 1020px;
+.page-header .logo h1, .page-header .logo h1 a, .page-header .logo h1 a:hover {
+	padding: 22px 0 0 0;
+    font-family: 'Lato', sans-serif;
+	padding: 22px 0 0 0;
+	color: #ffffff;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	font-size: bold 35px;
+	text-transform: uppercase;
+	border: 1px solid red;
 }
 
-.footer p {
-	padding: 0 0 10px 0;
-} */
+.page-header .logo span{
+	color:red;
+}
+
+/* Navigation */
+    .page-header nav {
+        float: right !important;
+        font-family: "Lato-Bold", 'Lato', sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #494e62;
+		/* position: absolute; */
+		bottom: 0;
+		width: 500px;
+		height: 89px;
+		margin-right: 0;
+		padding-top: 39px;
+    }
+
+    .page-header nav li {
+		color: #494e62;
+		font-size: 12px;
+		font-weight: 400;
+        float: left;
+        margin-right:  3px;
+		/* padding-top: 3rem; */
+		list-style: none;    /*убрать элементы маркированного списка*/
+		position: relative;
+    }
+
+    .page-header nav li:last-child {
+        margin-right: 13px;
+    }

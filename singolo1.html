@@ -1,40 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Singolo</title>
 	<meta name="description" content="SINGOLO"/>
 	<meta name="keywords" content="SINGOLO, верстка, PixelPerfect"/>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	
-    <link rel="stylesheet" type="text/css" href="assets/css/singolo1.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">  <!-- Сброс настроек css -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">  <!-- 1ый вариант добавления шрифтов -->
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+	</style>  <!-- 2ой вариант добавления шрифтов -->
+	<link rel="stylesheet" type="text/css" href="assets/css/singolo1.css">  <!-- Добавление стилей css -->
+
 </head>
 <body>
-    <div="wrapper">
-		<div class="main">
-			<div class="header">
+    <!-- <div class="wrapper"> -->
+		<header class="page-header">
+			<div class="fixed-width clearfix">
 				<div class="logo">
-					<div class="logo_text">
 					<h1><a href="singolo1.html">SINGOLO <span>*</span></a></h1>
-					</div>
 				</div>
-				<div class="menubar">
-					<ul class="menu">
+				<nav>
+					<ul>
 						<li class="selected"><a href="singolo1.html">HOME</a></li>
-						<li><a href="#">SERVICES</a></li>
-						<li><a href="#">PORTFOLIO</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">CONTACT</a></li>
+						<li><a href="#">&bull; SERVICES</a></li>
+						<li><a href="#">&bull; PORTFOLIO</a></li>
+						<li><a href="#">&bull;ABOUT</a></li>
+						<li><a href="#">&bull;CONTACT</a></li>
 					</ul>
-				</div>
+				</nav>
 			</div>
-		</div>
-		<div class="site_content">
+		</header>
+		<section>
+		<div class="site_content fixed-width">
 			<div class="slider_block">
+
 			</div>
 			<div class="services_block">
+				<section>
+					<article></article>
+				</section>
 			<h1>Our Services</h1>
 			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 			<h2>Custom Design</h2>
@@ -51,9 +60,10 @@
 			<p> Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
 			</div>
 		</div>
-		<!-- <div class="footer">
+		</section>
+		<!-- <footer>
 			<h4>SINGOLO</h4>
 		</div> -->
-    </div>
+    <!-- </div> -->
 </body>
 </html>
