@@ -1,0 +1,58 @@
+/*!
+ *  Font Lato by tyPoland Lukasz Dziedzic - https://fonts.google.com/specimen/Lato
+ *  Classification: Sans Serif
+ */
+/*=================================
+Webfont Lato
+===================================*/
+  /* lato-300 - latin */  
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('Lato-Light.eot'); /* IE9 Compat Modes */
+	src: local('Lato Light'), local('Lato-Light'),
+	url('Lato-Light.woff2') format('woff2'), /* Super Modern Browsers */
+	url('Lato-Light.woff') format('woff'), /* Modern Browsers */
+	url('Lato-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
+
+  /* lato-400 - latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('Lato-Regular.eot'); /* IE9 Compat Modes */
+	src: local('Lato Regular'), local('Lato-Regular'),
+	url('Lato-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('Lato-Regular.woff') format('woff'), /* Modern Browsers */
+	url('Lato-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
+
+  /* lato-700 - latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('Lato-Bold.eot'); /* IE9 Compat Modes */
+	src: local('Lato Bold'), local('Lato-Bold'),
+	url('Lato-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+	url('Lato-Bold.woff') format('woff'), /* Modern Browsers */
+	url('Lato-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
+ 
+  /* lato-900 - latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url('Lato-Black.eot'); /* IE9 Compat Modes */
+	src: local('Lato Black'), local('Lato-Black'),
+	url('Lato-Black.woff2') format('woff2'), /* Super Modern Browsers */
+	url('Lato-Black.woff') format('woff'), /* Modern Browsers */
+	url('Lato-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
