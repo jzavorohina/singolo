@@ -1,3 +1,3 @@
 # JavaScript Development (RS School)
 
-## **`Singolo`**
+## **`Singolo`** - [link for check](https://jzavorohina.github.io/singolo/)
