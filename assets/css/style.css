@@ -18,7 +18,7 @@ html, body {
 h1,h2,h3,h4,h5,h6, .title {
     font-family: "Lato-Bold", 'Lato', sans-serif;
     font-weight: bold;
-    margin: 0 0 1em;
+    /* margin: 0 0 1em; */
 }
 
 h2 {
@@ -83,7 +83,8 @@ Header
 	position: absolute;
 	font-family: "Lato-Bold", 'Lato', sans-serif;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 12px;
+	/* font-size: 25px; */
 	/* font-size: 1.5625rem; */
 }
 
@@ -177,6 +178,7 @@ Slider
 	font-size: 16px;
 	
 }
+
 .slider .slider_block {
 	height: 512px;
 	width: 940px; 
@@ -244,10 +246,13 @@ Portfolio
 	background-color: #2d303a; 
 	font-size: 16px;
 }
+
 .portfolio .portfolio_block {
 	height: 870px;
 	width: 940px; 
 	position: relative;
+	padding-top: 35px;
+	padding-bottom: 67px;
 } 
 
 .portfolio .portfolio_block strong {
@@ -300,7 +305,7 @@ Portfolio
     }
 
     .work figure {
-        margin-bottom: 1em;
+        margin-bottom: 20px;
     }
 
     .work figure > img {
@@ -319,6 +324,7 @@ About us
 	background-color: #f2f2f2; 
 	font-size: 16px;
 }
+
 .aboutus .aboutus_block {
 	height: 734px;
 	width: 940px; 
@@ -416,7 +422,13 @@ Get a Quote
 		width: 31.91%;
 		width: 300px;
 		border: 5px solid red ;
-    }
+	}
+	
+	.getinfo button {
+		height: 20px;
+		width: 60px;
+		color: red ; 
+	}
 
 /*=================================
 Footer
