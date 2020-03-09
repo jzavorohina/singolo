@@ -21,13 +21,13 @@ h1,h2,h3,h4,h5,h6, .title {
     /* margin: 0 0 1em; */
 }
 
-h2 {
+/* h2 {
     font-size: 1.6rem;
 }
 
 h3 {
     font-size: 1.2rem;
-}
+} */
 
 .fixed-width {
 	max-width: 940px;
@@ -169,7 +169,7 @@ Slider
 ===================================*/	
 
 .slider {
-	height: 512px; 
+	height: 600px; 
 	min-width: 940px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -180,11 +180,53 @@ Slider
 }
 
 .slider .slider_block {
-	height: 512px;
+	height: 600px;
 	width: 940px; 
 	position: relative;
 	
 } 
+
+.slider-arrow {
+    width: 16px;
+    height: 27px;
+    background: url(./assets/img/arrow_left.png) no-repeat;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: filter .27s ease-out;
+}
+
+.slider-arrow:hover {
+	filter: brightness(80%);
+	/* cursor: pointer; */
+}
+
+.slider-arrow .arrow-left {
+    position: relative;
+    left: 2px;
+}
+
+.slider-arrow .arrow-right {
+    position: relative;
+    left: 1px;
+    transform: rotate(180deg);
+}
+
+.slider-phone-vertical {
+	position: relative;
+	left: -5px;
+	padding-top: 53px;
+	margin-right: 60px;
+	margin-left: 70px;
+}
+
+.slider-phone-horizontal {
+	position: relative;
+	left: 6px;
+	bottom: 1px;
+	/* padding-top: 174px;  */
+	padding-bottom: 140px;
+}
 
 /*=================================
 Services
@@ -206,34 +248,65 @@ Services
 } 
 
 .services .services_block strong {
-	font-size: 30px;
 	/* margin-bottom: 30px; */
+	font-family: "Lato-Black", 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .service {
     float: left;
-    width: 30%;
+	width: 30%; 
+	height: 102px;
+	/* width: 300px;  */
 	/* margin-right: 5%; */
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	}
 	
     .service:last-child {
         margin-right: 0;
     }
 
-    .service header > i {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #9a9a9a;
-        float: left;
-        width: 25%;
-    }
+	.service figure > img {
+		width: 20%;
+		float: left;
+		padding-bottom: 60px;
+		margin-right: 20px;
+	}
 
-    .service header > h2 {
-        float: left;
-        width: 75%;
+	.service > div {
+		width: 70%;
+		float: left;
+		margin-right: 20px;
+	}
+
+	.service > div:last-child {
+		width: 70%;
+		float: left;
+		margin-right: 0px;
+	}
+
+    .service > div > h3 {
+		float: left;
+		font-family: "Lato-Black", 'Lato', sans-serif;
+    	font-size: 18px;
+		font-weight: 900;
+		color: #666d89;
 	}
 	
+	.service > div > p {
+		float: left;
+		font-family: "Lato-Regular", 'Lato', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+		color: #666d89;
+		line-height: 21px;
+		text-align: justify;
+		/* vertical-align: baseline; */
+	}
+	
+	
+		
 /*=================================
 Portfolio
 ===================================*/
@@ -387,6 +460,7 @@ Get a Quote
 .getaquote .getaquote_block {
 	height: 654px;
 	width: 940px; 
+	color: #f0d8d9;
 	position: relative;
 } 
 
@@ -408,26 +482,174 @@ Get a Quote
 	}
 	
 	.getinfo > form {
+		height: 364px;
+		/* width: 66.96%; */
+		width: 620px;
         font-size: 2.5rem;
         font-weight: bold;
-        color: #9a9a9a;
+        color: #f48c8f;
         float: left;
-		width: 66.96%;
+	}
+
+	.getinfo > form input {
+		height: 38px;
 		width: 620px;
-		border: 5px solid yellow ;
-    }
+		background-color: #d6564f;
+		border: 1px solid #d6564f;
+		border-radius: 4px;
+		color: #f48c8f;
+	}
+
+	.getinfo > form textarea {
+		height: 200px;
+		width: 620px;
+		margin-top: 16px;
+		background-color: #d6564f;
+		border: 1px solid #d6564f;
+		border-radius: 4px;
+		color: #f48c8f;
+	}
+
+	.getinfo > form input:hover {
+		color: #f48c8f;
+		border: 1px solid #f48c8f;
+		cursor: pointer;
+	}
+
+	.getinfo > form textarea:hover {
+		color: #f48c8f;
+		border: 1px solid #f48c8f;
+		cursor: pointer;
+	}
+/* 
+	.getinfo > form input:active {
+		border: 1px solid #f48c8f !important;
+		color: #f48c8f;
+	}
+
+	.getinfo > form textarea:active {
+		border: 1px solid #f48c8f !important;
+		color: #f48c8f;
+	} */
+	
+	.getinfo > p {
+        color: #f48c8f;
+	}
+
+/* стиль для placeholder */
+	input::-webkit-input-placeholder {
+		padding-top: 15px;
+		padding-left: 15px;
+		color: #f48c8f;
+		font-family: "Lato-Regular", 'Lato', sans-serif;
+        font-size: 12px;
+		font-weight: 400;
+	}
+
+	input:-moz-placeholder {
+		padding-top: 15px;
+		padding-left: 15px;
+		color:#f48c8f;
+		font-family: "Lato-Regular", 'Lato', sans-serif;
+        font-size: 12px;
+		font-weight: 400;
+	}
+
+	textarea::-webkit-input-placeholder {
+		padding-top: 15px;
+		padding-left: 15px;
+		color: #f48c8f;
+		font-family: "Lato-Regular", 'Lato', sans-serif;
+        font-size: 12px;
+		font-weight: 400;
+	}
+
+	textarea:-moz-placeholder {
+		padding-top: 15px;
+		padding-left: 15px;
+		color:#f48c8f;
+		font-family: "Lato-Regular", 'Lato', sans-serif;
+        font-size: 12px;
+		font-weight: 400;
+	}
+
+/* скрывать placeholder при наведении */
+	input:focus::-webkit-input-placeholder {color: transparent}
+	input:focus::-moz-placeholder          {color: transparent}
+	input:focus:-moz-placeholder           {color: transparent}
+	input:focus:-ms-input-placeholder      {color: transparent}
+
+	textarea:focus::-webkit-input-placeholder {color: transparent}
+	textarea:focus::-moz-placeholder          {color: transparent}
+	textarea:focus:-moz-placeholder           {color: transparent}
+	textarea:focus:-ms-input-placeholder      {color: transparent}
+
+	.getinfo > form button {
+		height: 38px;
+		width: 160px;
+		background-color: #d6564f;
+		border: 1px solid #d6564f;
+		border-radius: 4px;
+		color: #f48c8f;
+	}
+
+	.getinfo form p button:hover {
+		border: 1px solid #ffffff;
+		cursor: pointer;
+		transition: all .5s ease-out;
+		color:#ffffff;
+	}
+
+	.getinfo > .data-block {
+		padding-top: 0px;
+		padding-bottom: 150px;
+	}
+
+	.getinfo > .description {
+		display: block;
+		margin-bottom: 29px;
+	}
+	
+	.getinfo > .description {
+		display: block;
+		margin-bottom: 4px;
+	}
 
     .getinfo > .contacts {
         float: left;
 		width: 31.91%;
 		width: 300px;
-		border: 5px solid red ;
+		color: #f0d8d9;
+		font-family: "Lato-Regular", 'Lato', sans-serif;
+        font-size: 12px;
+		font-weight: 400;
+		line-height: 21px;
+		text-align: justify;
 	}
-	
-	.getinfo button {
-		height: 20px;
-		width: 60px;
-		color: red ; 
+
+	.getinfo > .contacts h2 {
+        float: left;
+		width: 31.91%;
+		width: 300px;
+		margin-bottom: 15px;
+		color: #f0d8d9;
+		font-family: "Lato-Black", 'Lato', sans-serif;
+        font-size: 18px;
+		font-weight: 900;
+		line-height: 21px;
+		text-align: justify;
+	}
+
+	.getinfo > .contacts figure img {
+		float: left;
+		padding-top: 6px;
+		margin-right: 6px;
+		color: #f0d8d9;
+	}
+
+	.getinfo > .contacts figure span{
+        float: left;
+		color: #f0d8d9;
 	}
 
 /*=================================
