@@ -186,34 +186,43 @@ Slider
 	
 } 
 
-.slider-arrow {
-	/* width: 16px; */
-	width: 1.7%; 
+.slider_block button{
+	width: 16px; 
     height: 27px;
-    background: url(./assets/img/arrow_left.png) no-repeat;
     border: none;
     border-radius: 3px;
+	cursor: pointer;
+}
+
+.arrow-left {
+	position: absolute;
+    top: 281px;
+	margin-left: 0px;
+	border: none;
+	background: transparent url(./assets/img/chev_left.png) no-repeat center;
+}
+
+.arrow-left:hover {
+	opacity: 0.7;
     cursor: pointer;
-    transition: filter .27s ease-out;
+    transition: all .1s ease-out;
 }
 
-.slider-arrow:hover {
-	filter: brightness(80%);
-	/* cursor: pointer; */
+.arrow-right {
+	position: absolute;
+    top: 281px;
+	right: 40px;
+	background: url(./assets/img/chev_right.png) no-repeat center;
+    border: none;
 }
 
-.slider-arrow .arrow-left {
-    position: relative;
-    left: 2px;
+.arrow-right:hover {
+	opacity: 0.7;
+    cursor: pointer;
+    transition: all .1s ease-out;
 }
 
-.slider-arrow .arrow-right {
-    position: relative;
-    left: 1px;
-    transform: rotate(180deg);
-}
-
-.slider-phone-vertical {
+.phone-vertical {
 	width: 25.5%;
 	position: relative;
 	left: -5px;
@@ -222,7 +231,7 @@ Slider
 	margin-left: 70px;
 }
 
-.slider-phone-horizontal {
+.phone-horizontal {
 	width: 51.5%;
 	position: relative;
 	left: 6px;
